@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<main class="container d-flex align-items-center justify-content-center " style="height: 700px ">
+  <div class="bg-light p-5 rounded">
+    <h1>სიტყვის ჩაწერა</h1>
+    <p class="lead">გააკეთეთ სიტყვის ჩანაწერი და მიიღეთ მონაწილეობა ქართული ხელოვნური ინტელექტის შექმნაში</p>
+    <a class="btn btn-lg btn-primary" href="{{ url_for('record') }}" role="button" >მონაწილეობა »</a>
+  </div>
+</main>
+
+{% endblock %}
