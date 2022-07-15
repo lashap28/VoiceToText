@@ -31,10 +31,6 @@ jobs:
         run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-      - name: Run Flask
-        run: |
-          export FLASK_APP=voiceService.py
-          flask run
       
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
@@ -64,4 +60,4 @@ jobs:
         with:
           app-name: 'GeoAI'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81E5E88C2DE1445E899B65F45A377A87 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E37739AA4AA64A2B86F03C92FA7BD009 }}
